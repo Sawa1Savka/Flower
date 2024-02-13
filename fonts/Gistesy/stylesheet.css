@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Gistesy';
+    src: url('Gistesy.eot');
+    src: url('Gistesy.eot?#iefix') format('embedded-opentype'),
+        url('Gistesy.woff2') format('woff2'),
+        url('Gistesy.woff') format('woff'),
+        url('Gistesy.ttf') format('truetype'),
+        url('Gistesy.svg#Gistesy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
