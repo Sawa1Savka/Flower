@@ -1,11 +1,15 @@
 ﻿var sliderIndex = 1;
 showSlides(sliderIndex);
 
+setInterval(function() {
+  plusSlides(1);
+}, 5000);
+
 function plusSlides(n) {
   showSlides(sliderIndex += n);
 }
 
-function currentSlides(n) {
+function currentSlide(n) {
   showSlides(sliderIndex = n);
 }
 
@@ -32,3 +36,4 @@ function showSlides(n) {
   slides[sliderIndex - 1].style.display = "block";
   dots[sliderIndex - 1].className += " active";
 }
+

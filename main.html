@@ -4,23 +4,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>Margo flower</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>           
     <header class="header">
         <div class="container">
             <div class="header_inner">
-                <div class="header_logo">Florita</div>
+              <a class="header_logo" href="/main.html">Florita</a>
                 <nav>
                     <a class="nav_link" href="/delivery.html">Оплата и доставка</a>
                     <a class="nav_link" href="#">Контакты</a>
                     <a class="nav_link" href="#">Корзина</a>                  
-                </nav>
+                </nav>  
             </div>
         </div>
     </header>
 
-    <div class="intro">
+    <div class="main">
          <div class="slides-container">
             <div class="slide fade">
                  <img src="./images/1.jpg" style="width: 100%;" alt="">
@@ -40,16 +40,36 @@
                     Текст слайда
                  </div>
            </div>
+           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <br>
         <div style="text-align: center;">
            <span class="dot" onclick="currentSlide(1)"></span>
            <span class="dot" onclick="currentSlide(2)"></span>
            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
      </div>
+
+     <h1>Розы</h1>
+
+     <section class="product-section">
+      <div class="product">
+        <div class="product-image">
+          <img src="white_rose.jpg" alt="Роза белая">
+        </div>
+        <h2 class="product-title">Роза белая</h2>
+        <p class="product-description">Белые розы символизируют чистоту и нежность. Они идеально подходят для свадебных церемоний и особых событий. Эти розы имеют изысканный аромат и прекрасно дополнят любой букет.</p>
+        <p class="product-price">Цена: $10.99</p>
+      </div>
+      <div class="product">
+        <div class="product-image">
+          <img src="/images/product/red_rose.jpg" alt="Роза красная">
+        </div>
+        <h2 class="product-title">Роза красная</h2>
+        <p class="product-description">Красные розы являются символом страсти и любви. Они идеально подходят для выражения сильных эмоций и создания романтической атмосферы. Эти розы имеют насыщенный аромат и будут прекрасным подарком для особого человека.</p>
+        <p class="product-price">Цена: $12.99</p>
+      </div>
+    </section>
 
     <footer>
         <div class="footer_container">

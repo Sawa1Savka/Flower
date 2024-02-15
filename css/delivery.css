@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Gistesy';
+    src: url('../fonts/Gistesy/Gistesy.eot');
+    src: url('../fonts/Gistesy/Gistesy.eot?#iefix') format('embedded-opentype'), url('../fonts/Gistesy/Gistesy.woff2') format('woff2'), url('../fonts/Gistesy/Gistesy.woff') format('woff'), url('../fonts/Gistesy/Gistesy.ttf') format('truetype'), url('../fonts/Gistesy/Gistesy.svg#Gistesy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-size: 12px;
+    background-color: #EDDABB;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding-top: 30px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_logo {
+    font-family: 'Gistesy';
+    font-size: 50px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav_link{
+    font-size: 22.5px;
+    display: inline-flex;
+    flex-flow: column;
+    margin: 0px 15px;
+    vertical-align: top;
+    text-decoration: none;
+    color: #000000;
+    transition: color .1s linear;
+}
+
+.nav_link:hover {
+    color: #A17D60;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+    font-size: 20px;
+}
+  
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+  
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+  
+li:before {
+  content: "\2022";
+  margin-right: 10px;
+}
+
+.map{
+    padding: 10px 0 40px 0;
+}
+
+footer {
+    background-color: #A17D60;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+ 
+ .footer_text {
+    flex-grow: 1;
+    color: #ffffff;
+    font-size: 16px;
+ }
+ 
+ .footer_links {
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;
+ }
+ 
+ .footer_links a {
+    margin: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .footer_links img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+ }
+ 
+ .footer_links span {
+    display: inline-block;
+    vertical-align: middle;
+ }
