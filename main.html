@@ -3,39 +3,40 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Margo flower</title>
+    <title>SadoRita</title>
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>           
     <header class="header">
         <div class="container">
             <div class="header_inner">
-              <a class="header_logo" href="/main.html">Florita</a>
+              <a class="header_logo" href="/main.html">SadoRita</a>
                 <nav>
                     <a class="nav_link" href="/delivery.html">Оплата и доставка</a>
-                    <a class="nav_link" href="#">Контакты</a>
-                    <a class="nav_link" href="#">Корзина</a>                  
+                    <a class="nav_link" href="/flower.html">Каталог цветов</a>
+                    <a class="cart_link" href="/cart.html">Корзина</a>                  
                 </nav>  
             </div>
         </div>
     </header>
 
     <div class="main">
+
          <div class="slides-container">
             <div class="slide fade">
-                 <img src="./images/1.jpg" style="width: 100%;" alt="">
+                 <img src="/images/slider/1.jpg" style="width: 100%;" alt="">
                  <div class="slide_text">
                      Текст слайда   
                   </div>
              </div>
            <div class="slide fade">
-                 <img src="./images/2.jpg" style="width: 100%;" alt="">                   
+                 <img src="/images/slider/2.jpg" style="width: 100%;" alt="">                   
                  <div class="slide_text">
                     Текст слайда
                  </div>
            </div>
            <div class="slide fade">
-                 <img src="./images/3.jpg" style="width: 100%;"  alt="">
+                 <img src="/images/slider/3.jpg" style="width: 100%;"  alt="">
                  <div class="slide_text">
                     Текст слайда
                  </div>
@@ -48,28 +49,39 @@
            <span class="dot" onclick="currentSlide(2)"></span>
            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-     </div>
 
-     <h1>Розы</h1>
+     
 
-     <section class="product-section">
-      <div class="product">
-        <div class="product-image">
-          <img src="white_rose.jpg" alt="Роза белая">
-        </div>
-        <h2 class="product-title">Роза белая</h2>
-        <p class="product-description">Белые розы символизируют чистоту и нежность. Они идеально подходят для свадебных церемоний и особых событий. Эти розы имеют изысканный аромат и прекрасно дополнят любой букет.</p>
-        <p class="product-price">Цена: $10.99</p>
-      </div>
-      <div class="product">
-        <div class="product-image">
-          <img src="//images/product/red_rose.jpg" alt="Роза красная">
-        </div>
-        <h2 class="product-title">Роза красная</h2>
-        <p class="product-description">Красные розы являются символом страсти и любви. Они идеально подходят для выражения сильных эмоций и создания романтической атмосферы. Эти розы имеют насыщенный аромат и будут прекрасным подарком для особого человека.</p>
-        <p class="product-price">Цена: $12.99</p>
-      </div>
-    </section>
+        <section class="product-section">
+          <a class="title_section" href="/flower.html">Розы</a>
+          <div class="rose">
+            <div class="product" href="/flower.html">
+              <div class="product-image">
+                <img src="/images/product/white_rose.jpg" alt="Роза белая">
+              </div>
+              <h2 class="product-title">Роза белая</h2>
+              <p class="product-description">Белые розы символизируют чистоту и нежность. Они идеально подходят для свадебных церемоний и особых событий. Эти розы имеют изысканный аромат и прекрасно дополнят любой букет.</p>
+              <div class="product-price">
+                <p></p><p class="price">7</p>
+              </div>
+              <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+            <div class="product" href="/flower.html">
+              <div class="product-image">
+                <img src="/images/product/red_rose.jpg" alt="Роза красная">
+              </div>
+              <h2 class="product-title">Роза красная</h2>
+              <p class="product-description">Красные розы являются символом страсти и любви. Они идеально подходят для выражения сильных эмоций и создания романтической атмосферы. Эти розы имеют насыщенный аромат и будут прекрасным подарком для особого человека.</p>
+              <div class="product-price">
+                <p>Цена: </p><p class="price">7 BYN</p>
+              </div>
+              <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+          </div>
+        </section>
+
+
+        
 
     <footer>
         <div class="footer_container">
