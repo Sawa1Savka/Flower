@@ -37,5 +37,5 @@ function showSlides(n) {
 }
 
 function redirectToPaymentPage() {
-  window.location.href = "/flower.html";
+  window.location.href = "./flower.html";
 }

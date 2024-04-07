@@ -102,7 +102,7 @@ function showSuccessModal() {
   const goToCartBtn = document.createElement("button");
   goToCartBtn.innerText = "Перейти в корзину";
   goToCartBtn.addEventListener("click", () => {
-    window.location.href = "cart.html";
+    window.location.href = "./cart.html";
     successModal.remove();
   });
   successButton.appendChild(goToCartBtn);
