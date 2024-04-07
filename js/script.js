@@ -1,4 +1,4 @@
-﻿var sliderIndex = 1;
+﻿sliderIndex = 1;
 showSlides(sliderIndex);
 
 setInterval(function() {
@@ -14,9 +14,8 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  var dots = document.getElementsByClassName("dot");
+   slides = document.getElementsByClassName("slide");
+   dots = document.getElementsByClassName("dot");
 
   if (n > slides.length) {
     sliderIndex = 1;
@@ -37,3 +36,6 @@ function showSlides(n) {
   dots[sliderIndex - 1].className += " active";
 }
 
+function redirectToPaymentPage() {
+  window.location.href = "/flower.html";
+}

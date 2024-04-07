@@ -116,6 +116,41 @@ body {
     background-color: #825E45;
   }
 
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ffffff;
+  }
+  
+  .total p {
+    font-size: 18px;
+  }
+  
+  .total #total-amount {
+    font-weight: bold;
+    font-size: 20px;
+    color: #A17D60;
+  }
+  
+  .pay-button {
+    background-color: #A17D60;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background-color: #825E45;
+  }
+
 footer {
     background-color: #A17D60;
     padding: 20px;

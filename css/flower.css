@@ -76,12 +76,9 @@ body {
   margin: 0 auto;
 }
     
-.rose{
+.flower{
   display: flex;
-}
-
-.hydrangea{
-  display: flex;
+  flex-wrap: wrap;
 }
     
 .product {
@@ -130,9 +127,12 @@ body {
 }
     
 .product-price {
+  display: inline-flex;
+  align-items: flex-end;
   font-weight: bold;
   text-align: left;
   color: #f00;
+  padding: 8px;
 }
     
 .product-section h1 {

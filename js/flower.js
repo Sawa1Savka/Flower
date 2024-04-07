@@ -3,7 +3,7 @@ const cards = document.querySelectorAll(".product");
 cards.forEach((card) => {
   const addToCartBtn = card.querySelector(".add-to-cart");
   const title = card.querySelector(".product-title").innerText;
-  const price = card.querySelector(".product-price").innerText;
+  const price = card.querySelector(".price").innerText;
 
   addToCartBtn.addEventListener("click", () => {
     // Создание модального окна

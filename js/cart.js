@@ -1,4 +1,6 @@
 const finalcart = document.getElementById("cart-items");
+const totalAmount = document.getElementById("total-amount");
+const payButton = document.querySelector(".pay-button");
 
 let cartStorage = JSON.parse(localStorage.getItem("cart") || "[]");
 
@@ -28,6 +30,9 @@ function updateCart() {
 
     finalcart.appendChild(newCart);
   });
+
+  // Обновляем общую сумму
+  totalAmount.innerText = calculateTotalSum();
 }
 
 function updateQuantity(event) {
@@ -52,6 +57,26 @@ cartStorage.forEach((item) => {
   if (item.quantity === undefined) {
     item.quantity = 1;
   }
+});
+
+// Функция для расчета общей суммы цветов
+function calculateTotalSum() {
+  let totalSum = 0;
+
+  cartStorage.forEach((item) => {
+    const quantity = item.quantity;
+    const price = item.price;
+    const sum = quantity * price;
+    totalSum += sum;
+  });
+
+  return totalSum;
+}
+
+// Обработчик кнопки оплаты
+payButton.addEventListener("click", () => {
+  const totalSum = calculateTotalSum();
+  alert(`Общая сумма к оплате: ${totalSum} рублей`);
 });
 
 updateCart();
